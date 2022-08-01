@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Filter App </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"> </script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"> </script>
+        <script src="main.js"> </script>
+    </head>
+    <body background="https://png.pngtree.com/png-clipart/20220621/original/pngtree-seamless-ornamental-swirl-islamic-pattern-background-for-invitation-card-and-fabric-png-image_8172558.png">
+        <div class="container">
+            <center>
+                <h1> Realtime Filter </h1>
+                <hr>
+                <button class="btn btn-success"  onclick="take_snapshot()"> Take Snapshot </button>
+            </center>
+            <h3> Filters: </h3>
+            <div class="fixed">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <button class="btn btn-danger"  onclick="set_filter1()"> Clown </button>
+                    </div>
+                    <div class="col-lg-2">
+                        <button class="btn btn-danger"  onclick="set_filter2()"> Mustache </button>
+                    </div>
+                    <div class="col-lg-2">
+                        <button class="btn btn-danger"  onclick="set_filter3()"> Lipstick </button>
+                    </div>
+                    <div class="col-lg-2">
+                        <button class="btn btn-danger"  onclick="set_filter4()"> Sunglasses </button>
+                    </div>
+                    <div class="col-lg-2">
+                        <button class="btn btn-danger"  onclick="set_filter5()"> Dog </button>
+                    </div>
+                    <div class="col-lg-2">
+                        <button class="btn btn-danger"  onclick="set_filter6()"> Filter Colour Change </button>
+                    </div>
+                </div>
+            </div>
+            <br> <br>
+            <label> Filter Colour: </label>
+            <input type="text" id="colour_name" placeholder="Enter Filter Name...">
+            <br>
+            <label style="color: red;"> ** After you change your filter colour, <br> click on "Filter Colour Change" button. ** </label>
+        </div>
+    </body>
+</html>

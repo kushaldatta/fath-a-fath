@@ -1,0 +1,37 @@
+h1 {
+    font-size: 40px !important;
+    color: blue;
+}
+
+h3 {
+    font-size: 25px;
+    color: green;
+}
+
+canvas {
+    border: 3px dotted black;
+    animation-name: color_animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color_animation {
+    from {box-shadow: 5px 5px 40px orange;}
+    to {box-shadow: 5px 5px 40px purple;}
+}
+
+.btn-danger:hover {
+    color: red;
+    background-color: white;
+    border-color: black;
+}
+
+label {
+    font-size: 15px;
+    color: orange;
+}
+
+input {
+    border-radius: 5px;
+    width: 230px;
+}
